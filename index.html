@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Predicting student enrollment public by math4youbyusgroupillinois</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Predicting student enrollment public</h1>
+        <h2>  Statistical models and analysis of student enrollment in Chicago Public Schools</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/math4youbyusgroupillinois/predicting_student_enrollment_public/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/math4youbyusgroupillinois/predicting_student_enrollment_public/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/math4youbyusgroupillinois/predicting_student_enrollment_public" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h2>
+<a id="predicting-school-level-enrollment-for-chicago-public-schools" class="anchor" href="#predicting-school-level-enrollment-for-chicago-public-schools" aria-hidden="true"><span class="octicon octicon-link"></span></a>Predicting School-Level Enrollment for Chicago Public Schools</h2>
+
+<p><img src="http://dssg.io/img/partners/cps.png" width="300" align="right"></p>
+
+<p>Statistical models and analysis of student enrollment to better allocate school budgets in Chicago. 
+This project is a 2014 Data Science for Social Good project in partnership with Chicago Public Schools.</p>
+
+<p>For a more comprehensive overview, please consult our <a href="http://dssg.io/2014/07/23/cps-enrollment-prediction.html">blog post</a>.</p>
+
+<h3>
+<a id="project-description" class="anchor" href="#project-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Description</h3>
+
+<p>Lack of accurate enrollment forecasting (at the individual school level) causes millions of dollars to be re-allocated every year causing administration and teaching disruption.</p>
+
+<p>In the Chicago Public Schools system, each school's budget depends on how many students enroll there. Unfortunately, it can be difficult to predict how many students will enroll in a given year, and inaccurate predictions can result in last-minute money shuffles, staff changes, and wasted educational time. Because budget allocations are made in the spring, long before students start in September, early and accurate predictions of student enrollment are crucial.</p>
+
+<h3>
+<a id="the-solution" class="anchor" href="#the-solution" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Solution</h3>
+
+<p>To answer these questions, we approached the problem in the following ways:</p>
+
+<ul>
+<li>Extensive Exploratory Data Analysis</li>
+<li>Linear Regression (School Level)</li>
+<li>Conditional Logit Model (Student Level)</li>
+<li>Decision Tree (Predict Misprojection)</li>
+</ul>
+
+<h3>
+<a id="project-layout" class="anchor" href="#project-layout" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Layout</h3>
+
+<ul>
+<li>Data_Pipeline: process raw data into structured data frame</li>
+<li>Data_Analysis: data visualization and regression analysis</li>
+<li>Tool_Box: main tool box for CPS usage to make prediction and diagnose prediction for the future</li>
+</ul>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<h4>
+<a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git</h4>
+
+<p>To download the code we used for the project, you will need to clone the repository using Git. <a href="http://git-scm.com/">Git</a> is used version control system we used to orginize our code. We hosted the code on <a href="http://github.com/">Github</a>. You can download Git <a href="http://git-scm.com/downloads">here</a>. Information on getting started with Git is <a href="http://git-scm.com/book/en/Getting-Started-Git-Basics">here</a>. Additionally, you will need to create a Github account.</p>
+
+<p>Once you have installed Git, you will need to navigate in command line to the folder in which you want to download the code. Then you will need to clone the respository with the following commands. </p>
+
+<pre><code>git clone https://github.com/dssg/predicting_student_enrollment.git
+cd predicting_student_enrollment/
+</code></pre>
+
+<h4>
+<a id="r" class="anchor" href="#r" aria-hidden="true"><span class="octicon octicon-link"></span></a>R</h4>
+
+<p>We did most of our analyses in R. R is available for free via the <a href="http://www.r-project.org">R Project website</a> or, with a slightly friendlier user interface, as <a href="http://www.rstudio.com">RStudio</a>. See <a href="https://github.com/dssg/nfp#using-r">these resources</a> for a more detailed overview of R.</p>
+
+<p>Much of R's functionality comes not from the base installation but from additional packages.  Details about how to install packages are available <a href="http://www.r-bloggers.com/installing-r-packages">here</a>.  Our code makes use of the following packages:</p>
+
+<ul>
+<li>ggplot2</li>
+<li>plyr</li>
+<li>survival</li>
+<li>clogitL1</li>
+<li>randomForest</li>
+</ul>
+
+<h3>
+<a id="team" class="anchor" href="#team" aria-hidden="true"><span class="octicon octicon-link"></span></a>Team</h3>
+
+<p><img src="http://dssg.io/img/posts/cps-team.png" alt="CPS Team"></p>
+
+<ul>
+<li>
+<a href="https://github.com/vanessako">Vanessa Ko</a>, Political Science, McGill University</li>
+<li>
+<a href="https://github.com/andland">Andrew Landgraf</a>, Statistics, The Ohio State University</li>
+<li>
+<a href="https://github.com/tracyschifeling">Tracy Schifeling</a>, Statistics, Duke University</li>
+<li>
+<a href="https://github.com/ZhouYeJava">Zhou Ye</a>, Computer Science, Johns Hopkins University</li>
+<li>
+<a href="https://github.com/jtwalsh0">Joe Walsh</a>, Mentor</li>
+</ul>
+
+<h3>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h3>
+
+<p>Copyright (C) 2014 Data Science for Social Good Fellowship at the University of Chicago</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
